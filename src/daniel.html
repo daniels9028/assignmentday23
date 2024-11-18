@@ -6,8 +6,71 @@
     <title>Daniel Page</title>
 
     <link href="./output.css" rel="stylesheet" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="w-full bg-[#1A1A19]">
+    <header class="fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md">
+      <nav
+        class="max-w-[1444px] mx-auto px-12 flex justify-between items-center h-20"
+      >
+        <div class="flex justify-center items-center text-[#F6FCDF]">
+          <span class="text-lg cursor-pointer">Daniel Maruli Sitohang</span>
+        </div>
+        <ul
+          class="flex flex-row gap-12 items-center text-[#F6FCDF] cursor-pointer text-lg"
+        >
+          <li>About</li>
+          <li>Portfolio</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="max-w-[1444px] mx-auto px-12 mt-32 flex gap-28 flex-col">
+      <section
+        class="flex lg:flex-row flex-col gap-12 justify-between items-center w-full"
+      >
+        <div
+          class="text-[#F6FCDF] flex flex-col justify-center gap-4 lg:w-1/2 w-full"
+        >
+          <h3 class="text-gray-300 text-4xl">Full Stack Developer</h3>
+          <p class="text-[#F6FCDF]">
+            HEY, I AM <br /><span class="text-blue-400 text-5xl text-wrap"
+              >DANIEL MARULI SITOHANG</span
+            >
+          </p>
+          <p class="text-white text-2xl">
+            I'm a passionate full stack developer with over than 2 years of
+            experience..
+          </p>
+          <div class="flex flex-row gap-4 items-center">
+            <button
+              class="rounded-lg border-[#F6FCDF] border px-4 py-2 hover:scale-110 transition-transform duration-300"
+            >
+              Download CV
+            </button>
+            <i
+              class="bx bxl-github text-4xl cursor-pointer hover:scale-110 transition-transform duration-300"
+            ></i>
+            <i
+              class="bx bxl-instagram-alt text-4xl cursor-pointer hover:scale-110 transition-transform duration-300"
+            ></i>
+            <i
+              class="bx bxl-linkedin-square text-4xl cursor-pointer hover:scale-110 transition-transform duration-300"
+            ></i>
+            <i
+              class="bx bxl-facebook-square text-4xl cursor-pointer hover:scale-110 transition-transform duration-300"
+            ></i>
+          </div>
+        </div>
+        <div class="lg:w-1/2 w-full">
+          <img src="hero_daniel.png" alt="" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
