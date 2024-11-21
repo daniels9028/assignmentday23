@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Deva</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deva</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 p-3" style="background-color: #4c4b16">
+      <div class="grid grid-cols-3 md:mx-10">
+        <!-- Tombol Hamburger (untuk mobile) -->
+        <button class="md:hidden" id="hamburger-button">
+          <span class="block w-6 h-1 mb-1 bg-white"></span>
+          <span class="block w-6 h-1 mb-1 bg-white"></span>
+          <span class="block w-6 h-1 bg-white"></span>
+        </button>
+
+        <!-- Logo -->
+        <a
+          href="./index.html"
+          class="flex justify-center md:justify-start place-content-center"
+        >
+          <img src="assets/logo dapoer dadong.png" alt="logo restoran" />
+        </a>
+
+        <!-- Menu Web -->
+        <nav class="hidden md:block place-content-center">
+          <ul class="grid grid-cols-4 text-xl text-white">
+            <li class="flex justify-center"><a href="./index.html">Home</a></li>
+            <li class="flex justify-center"><a href="./menu.html">Menu</a></li>
+            <li class="flex justify-center"><a href="">Galeri</a></li>
+            <li class="flex justify-center"><a href="">Chat</a></li>
+          </ul>
+        </nav>
+
+        <!-- Pesanan -->
+        <div class="place-content-center">
+          <div class="flex justify-end gap-2">
+            <a href="">
+              <img src="assets/pesanan.png" alt="pesanan" />
+            </a>
+            <a
+              class="hidden text-xl text-white md:block place-content-center"
+              href=""
+              >Pesanan</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Responsif (untuk layar kecil) -->
+      <nav class="container hidden mx-auto md:hidden" id="mobile-menu">
+        <ul class="flex flex-col py-1 text-white">
+          <li class="py-2"><a href="./index.html">Home</a></li>
+          <li class="py-2"><a href="./menu.html">Menu</a></li>
+          <li class="py-2"><a href="">Galeri</a></li>
+          <li class="py-2"><a href="">Chat</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>
