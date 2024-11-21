@@ -60,6 +60,65 @@
       </nav>
     </header>
 
+    <footer class="grid md:grid-cols-2 bg-[#4c4b16] px-10 pb-5">
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <a class="flex justify-center py-5 md:py-0" href="">
+          <img
+            src="assets/logo dapoer dadong.png"
+            alt=""
+            class="w-64 align-middle md:w-full"
+          />
+        </a>
+        <!-- Desktop -->
+        <div class="flex justify-center">
+          <div class="hidden text-white md:block">
+            <p class="font-bold">Alamat Restoran</p>
+            <p>Jalan Tegala No. 11</p>
+            <p>Desa Pendem</p>
+            <p>Jembrana, Bali</p>
+          </div>
+        </div>
+        <div class="hidden text-white md:block">
+          <p class="font-bold">Jam Operasional</p>
+          <p>Senin - Minggu: 10.00 - 22.00</p>
+          <p class="font-bold">Jam Pemesanan</p>
+          <p>Senin - Minggu: 06.00 - 20.00</p>
+        </div>
+
+        <!-- Mobile -->
+        <div class="grid grid-cols-1 md:hidden">
+          <div class="flex justify-center pb-5">
+            <div class="text-center text-white">
+              <p class="font-bold">Alamat Restoran</p>
+              <p>Jalan Tegala No. 11, Desa Pendem, Jembrana, Bali</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 pb-5 text-center text-white">
+            <div>
+              <p class="font-bold">Jam Operasional</p>
+              <p>Senin - Minggu:</p>
+              <p>10.00 - 22.00</p>
+            </div>
+            <div>
+              <p class="font-bold">Jam Pemesanan</p>
+              <p>Senin - Minggu</p>
+              <p>06.00 - 20.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-white md:text-right">
+        <nav>
+          <ul>
+            <li class="font-bold">Tentang</li>
+            <a href=""><li>Kebijakan</li></a>
+            <a href=""><li>Syarat & Ketentuan</li></a>
+            <a href=""><li>Tentang Kami</li></a>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
     <script>
       // Ambil elemen hamburger dan menu
       const hamburgerButton = document.getElementById("hamburger-button");
