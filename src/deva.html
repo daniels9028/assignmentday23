@@ -60,6 +60,60 @@
       </nav>
     </header>
 
+    <main>
+      <section class="relative w-full">
+        <!-- Gambar Hook Desktop -->
+        <img
+          src="assets/gambar hook.png"
+          alt="Background Image"
+          class="hidden object-cover w-full h-full md:block"
+        />
+        <!-- Gambar Hook Mobile -->
+        <img
+          src="assets/gambar hook mobile.jpg"
+          alt=""
+          class="object-cover w-full h-full md:hidden"
+        />
+
+        <div
+          class="container absolute inset-0 flex items-center justify-center mx-auto"
+        >
+          <!-- Hook CTA Desktop -->
+          <div
+            class="hidden px-20 py-5 text-center w-fit rounded-3xl md:block"
+            style="background-color: #edf1d6d3"
+          >
+            <h1 class="py-1 text-4xl font-bold">Kumpul Santai</h1>
+            <h1 class="py-1 text-4xl font-bold">Makan Rame-rame</h1>
+            <h1 class="py-1 text-3xl font-bold">Dapat Diskon 40%</h1>
+            <a class="py-1" href="#keuntungan">
+              <button
+                class="px-6 py-3 text-3xl font-bold text-white rounded-xl hover:bg-[#838125] bg-[#4C4B16] hover:font-bold"
+              >
+                PESAN SEKARANG!
+              </button>
+            </a>
+          </div>
+          <!-- Hook CTA Mobile -->
+          <div
+            class="px-12 py-3 text-center w-fit rounded-3xl md:hidden"
+            style="background-color: #edf1d6d3"
+          >
+            <h1 class="text-2xl font-bold">Kumpul Santai</h1>
+            <h1 class="text-2xl font-bold">Makan Rame-rame</h1>
+            <h1 class="text-xl font-bold">Dapat Diskon 40%</h1>
+            <a class="py-1" href="#keuntungan">
+              <button
+                class="px-4 py-2 text-xl font-bold text-white rounded-xl bg-[#4C4B16] hover:bg-[#838125]"
+              >
+                PESAN SEKARANG!
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer class="grid md:grid-cols-2 bg-[#4c4b16] px-10 pb-5">
       <div class="grid grid-cols-1 md:grid-cols-3">
         <a class="flex justify-center py-5 md:py-0" href="">
