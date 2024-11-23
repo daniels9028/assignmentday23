@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deva</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 p-3" style="background-color: #4c4b16">
+      <div class="grid grid-cols-3 md:mx-10">
+        <!-- Tombol Hamburger (untuk mobile) -->
+        <button class="md:hidden" id="hamburger-button">
+          <span class="block w-6 h-1 mb-1 bg-white"></span>
+          <span class="block w-6 h-1 mb-1 bg-white"></span>
+          <span class="block w-6 h-1 bg-white"></span>
+        </button>
+
+        <!-- Logo -->
+        <a
+          href="./index.html"
+          class="flex justify-center md:justify-start place-content-center"
+        >
+          <img src="project_deva/logo dapoer dadong.png" alt="logo restoran" />
+        </a>
+
+        <!-- Menu Web -->
+        <nav class="hidden md:block place-content-center">
+          <ul class="grid grid-cols-4 text-xl text-white">
+            <li class="flex justify-center"><a href="./index.html">Home</a></li>
+            <li class="flex justify-center"><a href="./menu.html">Menu</a></li>
+            <li class="flex justify-center"><a href="">Galeri</a></li>
+            <li class="flex justify-center"><a href="">Chat</a></li>
+          </ul>
+        </nav>
+
+        <!-- Pesanan -->
+        <div class="place-content-center">
+          <div class="flex justify-end gap-2">
+            <a href="">
+              <img src="project_deva/pesanan.png" alt="pesanan" />
+            </a>
+            <a
+              class="hidden text-xl text-white md:block place-content-center"
+              href=""
+              >Pesanan</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Responsif (untuk layar kecil) -->
+      <nav class="container hidden mx-auto md:hidden" id="mobile-menu">
+        <ul class="flex flex-col py-1 text-white">
+          <li class="py-2"><a href="./index.html">Home</a></li>
+          <li class="py-2"><a href="./menu.html">Menu</a></li>
+          <li class="py-2"><a href="">Galeri</a></li>
+          <li class="py-2"><a href="">Chat</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="relative w-full">
+        <!-- Gambar Hook Desktop -->
+        <img
+          src="assets/gambar hook.png"
+          alt="Background Image"
+          class="hidden object-cover w-full h-full md:block"
+        />
+        <!-- Gambar Hook Mobile -->
+        <img
+          src="assets/gambar hook mobile.jpg"
+          alt=""
+          class="object-cover w-full h-full md:hidden"
+        />
+
+        <div
+          class="container absolute inset-0 flex items-center justify-center mx-auto"
+        >
+          <!-- Hook CTA Desktop -->
+          <div
+            class="hidden px-20 py-5 text-center w-fit rounded-3xl md:block"
+            style="background-color: #edf1d6d3"
+          >
+            <h1 class="py-1 text-4xl font-bold">Kumpul Santai</h1>
+            <h1 class="py-1 text-4xl font-bold">Makan Rame-rame</h1>
+            <h1 class="py-1 text-3xl font-bold">Dapat Diskon 40%</h1>
+            <a class="py-1" href="#keuntungan">
+              <button
+                class="px-6 py-3 text-3xl font-bold text-white rounded-xl hover:bg-[#838125] bg-[#4C4B16] hover:font-bold"
+              >
+                PESAN SEKARANG!
+              </button>
+            </a>
+          </div>
+          <!-- Hook CTA Mobile -->
+          <div
+            class="px-12 py-3 text-center w-fit rounded-3xl md:hidden"
+            style="background-color: #edf1d6d3"
+          >
+            <h1 class="text-2xl font-bold">Kumpul Santai</h1>
+            <h1 class="text-2xl font-bold">Makan Rame-rame</h1>
+            <h1 class="text-xl font-bold">Dapat Diskon 40%</h1>
+            <a class="py-1" href="#keuntungan">
+              <button
+                class="px-4 py-2 text-xl font-bold text-white rounded-xl bg-[#4C4B16] hover:bg-[#838125]"
+              >
+                PESAN SEKARANG!
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section style="background-color: #4c4b16" id="keuntungan">
+        <div
+          class="grid grid-cols-2 gap-2 py-3 text-xl text-white md:mx-10 md:grid-cols-4"
+        >
+          <div
+            class="flex flex-col items-center justify-center gap-2 md:flex-row"
+          >
+            <img src="assets/super diskon.png" alt="super diskon" />
+            <div class="text-center md:text-left">
+              <p>Super</p>
+              <p>Diskon</p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center gap-2 md:flex-row"
+          >
+            <img src="assets/nyaman.png" alt="suasana indah" />
+            <div class="text-center md:text-left">
+              <p>Suasana Indah</p>
+              <p>& Nyaman</p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center gap-2 md:flex-row"
+          >
+            <img src="assets/cepat sedia.png" alt="cepat sedia makanan" />
+            <div class="text-center md:text-left">
+              <p>Makanan cepat</p>
+              <p>Tersedia</p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center gap-2 md:flex-row"
+          >
+            <img src="assets/bebas pilih.png" alt="bebas pilih tempat" />
+            <div class="text-center md:text-left">
+              <p>Bebas Pilih</p>
+              <p>Tempat Duduk</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="background-color: #e9eed988">
+        <div class="hidden md:block" id="promo-paket-rame">
+          <h1 class="flex justify-center py-5 text-3xl font-bold">
+            Promo Paket Rame Diskon 40%
+          </h1>
+        </div>
+        <div class="md:hidden">
+          <div class="py-5 text-2xl font-bold">
+            <h1 class="flex justify-center">Promo Paket Rame</h1>
+            <h1 class="flex justify-center">Diskon 40%</h1>
+          </div>
+        </div>
+        <div
+          class="grid items-center justify-center grid-cols-1 mx-5 md:grid-cols-4"
+        >
+          <div
+            class="flex justify-center mx-5 mb-5 transition duration-300 md:mb-0 hover:scale-110"
+          >
+            <div
+              class="w-full border-4 border-white shadow-2xl rounded-xl"
+              style="background-color: #cbd2a4"
+            >
+              <img
+                class="w-full border-b-4 border-white rounded-t-xl"
+                src="assets/ayam reguler.png"
+                alt=""
+              />
+              <div class="py-2">
+                <p class="flex justify-center text-2xl font-bold">
+                  Ayam Rame-rame
+                </p>
+                <p class="flex justify-center text-2xl">Reguler</p>
+                <div class="flex justify-center gap-2 text-xl">
+                  <p class="line-through font-extralight">70 RB</p>
+                  <p>40 RB</p>
+                </div>
+                <div class="flex justify-center py-1">
+                  <button
+                    class="px-5 py-1 text-2xl font-bold text-white rounded-lg bg-[#4C4B16] hover:bg-[#838125]"
+                  >
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex justify-center mx-5 mb-5 transition duration-300 md:mb-0 hover:scale-110"
+          >
+            <div
+              class="w-full border-4 border-white shadow-2xl rounded-xl"
+              style="background-color: #cbd2a4"
+            >
+              <img
+                class="w-full border-b-4 border-white rounded-t-xl"
+                src="assets/ikan reguler.png"
+                alt=""
+              />
+              <div class="py-2">
+                <p class="flex justify-center text-2xl font-bold">
+                  Ikan Seru-seruan
+                </p>
+                <p class="flex justify-center text-2xl">Reguler</p>
+                <div class="flex justify-center gap-2 text-xl">
+                  <p class="line-through font-extralight">100 RB</p>
+                  <p>70 RB</p>
+                </div>
+                <div class="flex justify-center py-1">
+                  <button
+                    class="px-5 py-1 text-2xl font-bold text-white rounded-lg bg-[#4C4B16] hover:bg-[#838125]"
+                  >
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex justify-center mx-5 mb-5 transition duration-300 md:mb-0 hover:scale-110"
+          >
+            <div
+              class="w-full border-4 border-white shadow-2xl rounded-xl"
+              style="background-color: #cbd2a4"
+            >
+              <img
+                class="w-full border-b-4 border-white rounded-t-xl"
+                src="assets/ayam reguler.png"
+                alt=""
+              />
+              <div class="py-2">
+                <p class="flex justify-center text-2xl font-bold">
+                  Ayam Kompak
+                </p>
+                <p class="flex justify-center text-2xl">Komplit</p>
+                <div class="flex justify-center gap-2 text-xl">
+                  <p class="line-through font-extralight">150 RB</p>
+                  <p>90 RB</p>
+                </div>
+                <div class="flex justify-center py-1">
+                  <button
+                    class="px-5 py-1 text-2xl font-bold text-white rounded-lg bg-[#4C4B16] hover:bg-[#838125]"
+                  >
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex justify-center mx-5 transition duration-300 hover:scale-110"
+          >
+            <div
+              class="w-full border-4 border-white shadow-2xl rounded-xl"
+              style="background-color: #cbd2a4"
+            >
+              <img
+                class="w-full border-b-4 border-white rounded-t-xl"
+                src="assets/ikan komplit.png"
+                alt=""
+              />
+              <div class="py-2">
+                <p class="flex justify-center text-2xl font-bold">
+                  Rombongan Ikan
+                </p>
+                <p class="flex justify-center text-2xl">Reguler</p>
+                <div class="flex justify-center gap-2 text-xl">
+                  <p class="line-through font-extralight">180 RB</p>
+                  <p>100 RB</p>
+                </div>
+                <div class="flex justify-center py-1">
+                  <button
+                    class="px-5 py-1 text-2xl font-bold text-white rounded-lg bg-[#4C4B16] hover:bg-[#838125]"
+                  >
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="flex justify-center py-5" href="./menu.html">
+          <button class="text-lg hover:font-bold hover:text-[#4C4B16]">
+            Menu Lainnya >
+          </button>
+        </a>
+      </section>
+
+      <section class="" style="background-color: #e9eed988">
+        <div class="hidden md:block">
+          <h1 class="flex justify-center py-5 text-3xl font-bold">
+            Menu Trendy
+          </h1>
+        </div>
+        <div class="md:hidden">
+          <div class="py-5 text-2xl font-bold">
+            <h1 class="flex justify-center">Menu Trendy</h1>
+          </div>
+        </div>
+        <div
+          class="grid items-center justify-center grid-cols-1 mx-5 md:grid-cols-4"
+        >
+          <div
+            class="flex justify-center mx-5 mb-5 transition duration-300 md:mb-0 hover:scale-110"
+          >
+            <div
+              class="w-full border-4 border-white shadow-2xl rounded-xl"
+              style="background-color: #cbd2a4"
+            >
+              <img
+                class="w-full border-b-4 border-white rounded-t-xl"
+                src="assets/ayam bakar reg.png"
+                alt=""
+              />
+              <div class="py-2">
+                <p class="flex justify-center text-2xl font-bold">Ayam Bakar</p>
+                <p class="flex justify-center text-2xl">Reguler</p>
+                <div class="flex justify-center gap-2 text-xl">
+                  <p class="line-through font-extralight">25 RB</p>
+                  <p>20 RB</p>
+                </div>
+                <div class="flex justify-center py-1">
+                  <button
+                    class="px-5 py-1 text-2xl font-bold text-white rounded-lg bg-[#4C4B16] hover:bg-[#838125]"
+                  >
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex justify-center mx-5 mb-5 transition duration-300 md:mb-0 hover:scale-110"
+          >
+            <div
+              class="w-full border-4 border-white shadow-2xl rounded-xl"
+              style="background-color: #cbd2a4"
+            >
+              <img
+                class="w-full border-b-4 border-white rounded-t-xl"
+                src="assets/ikan bakar reg.png"
+                alt=""
+              />
+              <div class="py-2">
+                <p class="flex justify-center text-2xl font-bold">Ikan Bakar</p>
+                <p class="flex justify-center text-2xl">Reguler</p>
+                <div class="flex justify-center gap-2 text-xl">
+                  <p class="line-through font-extralight">35 RB</p>
+                  <p>30 RB</p>
+                </div>
+                <div class="flex justify-center py-1">
+                  <button
+                    class="px-5 py-1 text-2xl font-bold text-white rounded-lg bg-[#4C4B16] hover:bg-[#838125]"
+                  >
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex justify-center mx-5 mb-5 transition duration-300 md:mb-0 hover:scale-110"
+          >
+            <div
+              class="w-full border-4 border-white shadow-2xl rounded-xl"
+              style="background-color: #cbd2a4"
+            >
+              <img
+                class="w-full border-b-4 border-white rounded-t-xl"
+                src="assets/ayam grg cukup.png"
+                alt=""
+              />
+              <div class="py-2">
+                <p class="flex justify-center text-2xl font-bold">
+                  Ayam Goreng
+                </p>
+                <p class="flex justify-center text-2xl">Cukup</p>
+                <div class="flex justify-center gap-2 text-xl">
+                  <p class="line-through font-extralight">20 RB</p>
+                  <p>15 RB</p>
+                </div>
+                <div class="flex justify-center py-1">
+                  <button
+                    class="px-5 py-1 text-2xl font-bold text-white rounded-lg bg-[#4C4B16] hover:bg-[#838125]"
+                  >
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex justify-center mx-5 transition duration-300 hover:scale-110"
+          >
+            <div
+              class="w-full border-4 border-white shadow-2xl rounded-xl"
+              style="background-color: #cbd2a4"
+            >
+              <img
+                class="w-full border-b-4 border-white rounded-t-xl"
+                src="assets/ikan grg cukup.png"
+                alt=""
+              />
+              <div class="py-2">
+                <p class="flex justify-center text-2xl font-bold">
+                  Ikan Goreng
+                </p>
+                <p class="flex justify-center text-2xl">Cukup</p>
+                <div class="flex justify-center gap-2 text-xl">
+                  <p class="line-through font-extralight">25 RB</p>
+                  <p>20 RB</p>
+                </div>
+                <div class="flex justify-center py-1">
+                  <button
+                    class="px-5 py-1 text-2xl font-bold text-white rounded-lg bg-[#4C4B16] hover:bg-[#838125]"
+                  >
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="flex justify-center py-5" href="./menu.html">
+          <button class="text-lg hover:font-bold hover:text-[#4C4B16]">
+            Menu Lainnya >
+          </button>
+        </a>
+      </section>
+
+      <section class="">
+        <div class="bg-[#4c4b16] grid md:grid-cols-2 py-5 px-10 grid-cols-1">
+          <div class="items-center gap-2 pb-5 text-white md:flex md:py-0">
+            <a
+              class="flex justify-center text-2xl font-bold md:justify-normal"
+              href=""
+            >
+              Galeri Bersama
+            </a>
+            <p class="hidden text-3xl font-bold md:block">-</p>
+            <p class="flex justify-center text-xl md:justify-normal">
+              @dapoerdadong
+            </p>
+          </div>
+          <div class="flex items-center justify-center gap-5 md:justify-end">
+            <a href="">
+              <img src="assets/logo_ig.png" alt="logo-ig" />
+            </a>
+            <a href="">
+              <img src="assets/logo_fb.png" alt="logo-fb" />
+            </a>
+          </div>
+        </div>
+        <a
+          class="bg-[#4c4b16] px-10 pb-5 md:grid-cols-3 grid gap-3 items-center"
+          href=""
+        >
+          <img
+            src="assets/galeri 1.png"
+            alt="galeri-1"
+            class="w-full mb-5 border-4 border-white rounded-xl md:mb-0"
+          />
+          <img
+            src="assets/galeri 2.png"
+            alt="galeri-2"
+            class="w-full mb-5 border-4 border-white md:mb-0 rounded-xl"
+          />
+          <img
+            src="assets/galeri 3.png"
+            alt="galeri-3"
+            class="w-full border-4 border-white rounded-xl"
+          />
+        </a>
+      </section>
+    </main>
+
+    <footer class="grid md:grid-cols-2 bg-[#4c4b16] px-10 pb-5">
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <a class="flex justify-center py-5 md:py-0" href="">
+          <img
+            src="assets/logo dapoer dadong.png"
+            alt=""
+            class="w-64 align-middle md:w-full"
+          />
+        </a>
+        <!-- Desktop -->
+        <div class="flex justify-center">
+          <div class="hidden text-white md:block">
+            <p class="font-bold">Alamat Restoran</p>
+            <p>Jalan Tegala No. 11</p>
+            <p>Desa Pendem</p>
+            <p>Jembrana, Bali</p>
+          </div>
+        </div>
+        <div class="hidden text-white md:block">
+          <p class="font-bold">Jam Operasional</p>
+          <p>Senin - Minggu: 10.00 - 22.00</p>
+          <p class="font-bold">Jam Pemesanan</p>
+          <p>Senin - Minggu: 06.00 - 20.00</p>
+        </div>
+
+        <!-- Mobile -->
+        <div class="grid grid-cols-1 md:hidden">
+          <div class="flex justify-center pb-5">
+            <div class="text-center text-white">
+              <p class="font-bold">Alamat Restoran</p>
+              <p>Jalan Tegala No. 11, Desa Pendem, Jembrana, Bali</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 pb-5 text-center text-white">
+            <div>
+              <p class="font-bold">Jam Operasional</p>
+              <p>Senin - Minggu:</p>
+              <p>10.00 - 22.00</p>
+            </div>
+            <div>
+              <p class="font-bold">Jam Pemesanan</p>
+              <p>Senin - Minggu</p>
+              <p>06.00 - 20.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-white md:text-right">
+        <nav>
+          <ul>
+            <li class="font-bold">Tentang</li>
+            <a href=""><li>Kebijakan</li></a>
+            <a href=""><li>Syarat & Ketentuan</li></a>
+            <a href=""><li>Tentang Kami</li></a>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      // Ambil elemen hamburger dan menu
+      const hamburgerButton = document.getElementById("hamburger-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      // Tambahkan event listener pada tombol hamburger
+      hamburgerButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
